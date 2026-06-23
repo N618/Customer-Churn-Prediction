@@ -93,6 +93,11 @@ IBM-Customer-Churn-Prediction
     ├── roc_curve.png
     └── feature_importance.png
 
+
+
+
+
+
 Data Preparation
 
 The notebook includes the following preprocessing steps:
@@ -207,3 +212,4 @@ Author
 
 Nitish Jha
 Data Analyst | Python | SQL | Power BI | Machine Learning
+
