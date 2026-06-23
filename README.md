@@ -92,3 +92,118 @@ IBM-Customer-Churn-Prediction
     ├── correlation_heatmap.png
     ├── roc_curve.png
     └── feature_importance.png
+
+Data Preparation
+
+The notebook includes the following preprocessing steps:
+
+Checked data shape, column types, missing values, and duplicates
+Converted TotalCharges from object to numeric
+Handled blank values in TotalCharges as missing values
+Removed rows with missing TotalCharges
+Dropped customerID because it is only an identifier
+Encoded categorical variables
+Standardized numeric features using StandardScaler
+Exploratory Data Analysis
+
+The analysis explores:
+
+Churn vs non-churn distribution
+Tenure, MonthlyCharges, and TotalCharges patterns
+Relationships between categorical variables and churn
+Customer segment behavior
+Class imbalance in the target variable
+Feature Engineering
+
+The modeling pipeline includes:
+
+Train-test split
+Label encoding
+Feature scaling
+Balancing the target classes using SMOTE
+Preparing the data for classification models
+Machine Learning Models Used
+
+The following models were trained and compared:
+
+Logistic Regression
+Decision Tree
+Random Forest
+Gradient Boosting
+XGBoost
+
+Hyperparameter tuning was performed using GridSearchCV.
+
+Model Evaluation
+
+The models were evaluated using:
+
+Accuracy
+Confusion Matrix
+Classification Report
+Precision
+Recall
+F1 Score
+ROC-AUC Curve
+
+Since churn prediction is an imbalanced classification problem, recall and F1-score were treated as more important than accuracy alone.
+
+Best Model
+
+Based on the notebook results, Gradient Boosting performed best among the tested models.
+
+Key Business Insights
+Customers with month-to-month contracts show the highest churn rate
+Customers with shorter tenure are more likely to churn
+Higher monthly charges are associated with increased churn
+Customers using electronic check tend to churn more often
+Long-term contracts improve customer retention
+Workflow
+Data Collection
+      ↓
+Data Cleaning
+      ↓
+Exploratory Data Analysis
+      ↓
+Feature Encoding
+      ↓
+Feature Scaling
+      ↓
+Train-Test Split
+      ↓
+SMOTE Balancing
+      ↓
+Model Training
+      ↓
+Hyperparameter Tuning
+      ↓
+Model Evaluation
+      ↓
+Business Insight Extraction
+Technologies Used
+Python
+Pandas
+NumPy
+Scikit-Learn
+XGBoost
+Imbalanced-Learn
+Matplotlib
+Seaborn
+Jupyter Notebook
+How to Run the Project
+git clone https://github.com/your-username/IBM-Customer-Churn-Prediction.git
+cd IBM-Customer-Churn-Prediction
+pip install -r requirements.txt
+jupyter notebook
+
+Open the notebook and run all cells step by step.
+
+Conclusion
+
+This project demonstrates a complete churn prediction workflow, from raw data cleaning to model building and evaluation.
+It highlights the most important churn drivers and supports data-driven customer retention strategies.
+
+Author
+
+Nitish Jha
+Data Analyst | Python | SQL | Power BI | Machine Learning
